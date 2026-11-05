@@ -1,15 +1,84 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Informativa privacy — PROOF</title><meta name="description" content="Informativa privacy per l'app PROOF"><style>
-:root{color-scheme:dark}body{margin:0;background:#0B0F18;color:#E8EDF4;font:16px/1.6 system-ui,-apple-system,sans-serif}main{max-width:760px;margin:auto;padding:38px 22px 90px}h1{color:#C9FF61;font-size:2rem}h2{margin-top:2rem;font-size:1.1rem}a{color:#C9FF61}p,li{color:#C3CDD8}.note{border:1px solid #566D35;padding:15px;border-radius:12px}small{color:#9DA7B5}
-</style></head><body><main><h1>PROOF — Informativa privacy</h1>
-<p><small>Ultimo aggiornamento: 5 novembre 2026</small></p>
-<p>Questa informativa descrive il trattamento dei dati nell'app PROOF, dedicata alla registrazione degli allenamenti. Per domande sulla privacy: <a href="mailto:giuseppemarturano8@gmail.com">giuseppemarturano8@gmail.com</a>.</p>
-<h2>1. Dati gestiti nell'app</h2><p>PROOF permette di inserire un nome di profilo facoltativo, schede, esercizi, serie, ripetizioni, carichi, note di prestazione e cronologia degli allenamenti. L'app li utilizza per offrirti le funzioni di registrazione, visualizzazione dello storico, statistiche e progressi.</p>
-<h2>2. Conservazione</h2><p>I dati di allenamento sono conservati nel dispositivo attraverso un database locale. Per utilizzare le funzioni di base non è necessaria la creazione di un account PROOF. Non è previsto, nelle funzionalità applicative esaminate, un servizio PROOF di sincronizzazione cloud automatica.</p>
-<h2>3. Backup, ripristino e condivisione</h2><p>Puoi esportare i dati in un file JSON e condividerlo o salvarlo mediante servizi scelti da te (ad esempio un archivio cloud o un'app di messaggistica). Gli eventuali servizi esterni gestiscono i dati secondo le proprie informative. Il ripristino, dopo conferma, può sostituire integralmente i dati di allenamento già presenti. Anche i report che decidi di condividere possono contenere informazioni sulle tue prestazioni.</p>
-<h2>4. Conservazione e cancellazione dei dati</h2><p>I dati locali rimangono nell'app finché non li elimini, non li sostituisci tramite ripristino o non cancelli l'archivio del dispositivo. Disinstallare l'app o cancellarne i dati può comportare la perdita permanente di schede e progressi; prima di farlo esporta un backup e conservalo esternamente. La cancellazione locale non elimina copie che hai già condiviso o caricato su altri servizi.</p>
-<h2>5. Assistenza</h2><p>Quando ci contatti via email, trattiamo l'indirizzo e le informazioni che scegli di inviarci allo scopo di rispondere alla richiesta. Non è necessario allegare il backup degli allenamenti per una normale segnalazione. Puoi chiedere informazioni o la cancellazione delle comunicazioni inviate scrivendo al recapito indicato.</p>
-<h2>6. Servizi di terze parti</h2><p>PROOF utilizza librerie software e funzionalità del sistema operativo. Le eventuali comunicazioni o trattamenti effettuati dai servizi di piattaforma devono essere valutati in base alla versione effettivamente distribuita e alle configurazioni Android/iOS. Questa informativa va aggiornata se vengono introdotti analisi, pubblicità, accesso remoto o altri servizi che trattano dati.</p>
-<h2>7. Modifiche</h2><p>Questa informativa può essere aggiornata quando cambiano le funzioni dell'app o le modalità di trattamento. La versione aggiornata sarà disponibile a questo indirizzo.</p>
-</main></body></html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informativa privacy dell'app PROOF per Android e iOS: dati locali, backup, assistenza e diritti degli utenti.">
+  <meta name="color-scheme" content="dark">
+  <title>Informativa privacy — PROOF</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0B0F18; --panel:#151D29; --fg:#EDF3F8; --muted:#B5C0CD; --accent:#C9FF61; --border:#2A3544; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.68 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:830px; margin:auto; padding:44px 22px 80px; }
+    .brand { color:var(--accent); font-size:.8rem; letter-spacing:.16em; font-weight:750; }
+    h1 { color:var(--fg); font-size:clamp(2rem,5vw,2.7rem); line-height:1.15; margin:12px 0 14px; }
+    h2 { font-size:1.18rem; color:var(--fg); margin:2rem 0 .55rem; }
+    p,li { color:var(--muted); }
+    .lead { font-size:1.06rem; }
+    a { color:var(--accent); overflow-wrap:anywhere; }
+    a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+    .summary { background:var(--panel); border:1px solid var(--border); border-radius:18px; padding:18px 20px; margin:24px 0 30px; }
+    .summary p { margin:0; }
+    strong { color:var(--fg); }
+    ul { padding-left:23px; }
+    li { margin-bottom:7px; }
+    small { color:#9BA8B9; }
+    footer { border-top:1px solid var(--border); margin-top:44px; padding-top:18px; font-size:.9rem; color:#9BA8B9; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">PROOF · OGNI PROGRESSO HA UNA PROVA</div>
+  <h1>Informativa privacy</h1>
+  <p><small>Ultimo aggiornamento: 5 novembre 2026</small></p>
+  <p class="lead">Questa informativa descrive come vengono gestiti i dati quando utilizzi PROOF, un'app per registrare allenamenti in palestra e seguire i tuoi progressi, e quando ci contatti per assistenza.</p>
+  <div class="summary"><p><strong>In breve.</strong> PROOF non richiede un account. Schede, sessioni, progressi e nome facoltativo del profilo sono gestiti nell'app sul tuo dispositivo. Non è prevista una sincronizzazione con un server PROOF. Puoi esportare manualmente un backup o condividere un report; inoltre, i sistemi Android e iOS possono applicare i propri meccanismi di backup o trasferimento, secondo le impostazioni del dispositivo.</p></div>
+
+  <h2>1. Titolare del trattamento</h2>
+  <p><strong>Giuseppe Marturano</strong>, sviluppatore indipendente, persona fisica.</p>
+  <p>Contatto per privacy e assistenza: <a href="mailto:giuseppemarturano8@gmail.com">giuseppemarturano8@gmail.com</a>.</p>
+
+  <h2>2. Quali dati utilizza PROOF</h2>
+  <p>Puoi inserire facoltativamente il nome da mostrare nel tuo profilo e creare schede di allenamento, esercizi, serie, ripetizioni, carichi, tempi di recupero, informazioni sulle prestazioni e cronologia delle sessioni. L'app elabora queste informazioni per consentirti di registrare gli allenamenti e visualizzare storico, statistiche, progressi e traguardi.</p>
+  <p>Non è richiesta la registrazione di un account e non è necessario comunicare un indirizzo email per utilizzare le funzionalità di allenamento. Evita di inserire nelle note informazioni mediche o altri dati particolarmente sensibili non necessari all'utilizzo dell'app.</p>
+
+  <h2>3. Dove sono conservati i dati</h2>
+  <p>I dati degli allenamenti sono registrati in un database locale dell'app; nome del profilo e alcune preferenze sono salvati nella memoria locale del dispositivo. Le funzionalità dell'app non prevedono l'invio automatico di questi dati a un server gestito da PROOF.</p>
+  <p><strong>Backup e trasferimenti di sistema:</strong> in base al sistema operativo, al dispositivo e alle impostazioni personali, Android o iOS possono includere dati dell'app nei propri servizi di backup o nei trasferimenti da un dispositivo all'altro. Tali servizi sono gestiti dai rispettivi fornitori della piattaforma e non equivalgono a una sincronizzazione PROOF. Non fare affidamento su di essi come unica copia dei tuoi allenamenti.</p>
+
+  <h2>4. Backup manuale, ripristino e condivisione</h2>
+  <p>Dalle Impostazioni puoi esportare un backup dei dati in formato JSON e scegliere dove conservarlo o condividerlo, anche tramite applicazioni o servizi esterni selezionati da te. Un backup può contenere schede, storico, prestazioni e nome del profilo. Se lo invii a terzi o a un servizio cloud, la conservazione e l'eventuale ulteriore utilizzo dipendono anche dal destinatario scelto.</p>
+  <p>Il ripristino di un backup, dopo una conferma esplicita, può <strong>sostituire completamente</strong> schede e dati di allenamento già presenti nell'app. I report che scegli volontariamente di condividere possono contenere informazioni sulle tue prestazioni.</p>
+  <p>I file JSON esportati non devono essere considerati automaticamente cifrati: conservali in un luogo protetto e non pubblicarli in spazi accessibili ad altri.</p>
+
+  <h2>5. Conservazione, eliminazione e perdita dei dati</h2>
+  <p>I dati locali rimangono disponibili finché non li cancelli o sostituisci oppure finché non vengono rimossi i dati dell'app o del dispositivo. Puoi modificare o eliminare dati e allenamenti mediante le funzioni disponibili in PROOF.</p>
+  <p><strong>Disinstallando PROOF o cancellandone i dati, potresti perdere definitivamente lo storico e i progressi.</strong> Prima di cambiare telefono o disinstallare l'app, esporta il backup e custodiscilo <strong>fuori dall'app e preferibilmente fuori dal dispositivo</strong>. La cancellazione locale non elimina eventuali copie esportate o presenti presso servizi esterni o backup del sistema operativo.</p>
+
+  <h2>6. Richieste inviate all'assistenza</h2>
+  <p>Quando scrivi a <a href="mailto:giuseppemarturano8@gmail.com">giuseppemarturano8@gmail.com</a>, utilizziamo l'indirizzo email, il contenuto del messaggio e le eventuali informazioni che decidi di allegare per rispondere alla richiesta, gestire la segnalazione e, quando necessario, tutelare i nostri diritti. Non è necessario inviare un backup dei tuoi allenamenti per richiedere assistenza.</p>
+  <p>Le comunicazioni di assistenza sono conservate per <strong>12 mesi dalla chiusura della richiesta</strong>, quindi cancellate, salvo obblighi di legge o specifiche esigenze documentate di tutela dei diritti che giustifichino una conservazione ulteriore limitata al tempo necessario.</p>
+  <p>La posta elettronica è gestita tramite il servizio Gmail di Google; il relativo fornitore tratta dati tecnici e comunicazioni secondo le condizioni e le garanzie applicabili al servizio.</p>
+
+  <h2>7. Finalità e basi giuridiche</h2>
+  <p>La gestione delle informazioni inserite nell'app serve a fornire le funzioni di diario e analisi richieste dall'utente. Per quanto i trattamenti ricadano nella responsabilità del titolare, la base giuridica è l'esecuzione del servizio richiesto (articolo 6, paragrafo 1, lettera b, GDPR).</p>
+  <p>La gestione delle email di assistenza si fonda, a seconda della richiesta, sull'esecuzione del servizio richiesto oppure sul legittimo interesse a rispondere alle segnalazioni e mantenere affidabile l'app (articolo 6, paragrafo 1, lettere b e f, GDPR). La conservazione ulteriore, ove necessaria, può basarsi su obblighi di legge o sulla tutela di diritti.</p>
+
+  <h2>8. Destinatari e servizi esterni</h2>
+  <p>Non è prevista la condivisione automatica dei tuoi allenamenti con altri utenti o con un server PROOF. Le informazioni che scegli di esportare o condividere possono essere accessibili ai servizi o destinatari da te selezionati. I sistemi operativi e gli app store possono trattare dati tecnici o di backup secondo le rispettive informative.</p>
+  <p>Il servizio Gmail di Google è utilizzato per gestire le email di supporto. Questa pagina è pubblicata tramite GitHub Pages: durante la consultazione del sito, GitHub può trattare dati tecnici di accesso secondo la propria informativa. I trattamenti dei fornitori possono comportare trasferimenti internazionali, disciplinati dalle garanzie e dai meccanismi applicabili ai rispettivi servizi; puoi richiedere ulteriori informazioni al recapito indicato.</p>
+
+  <h2>9. Diritti delle persone interessate</h2>
+  <p>Nei casi previsti dal GDPR puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opposizione al trattamento dei tuoi dati personali. Puoi scrivere al titolare all'indirizzo <a href="mailto:giuseppemarturano8@gmail.com">giuseppemarturano8@gmail.com</a>. Per i dati conservati solo sul tuo dispositivo, molte operazioni possono essere effettuate direttamente nell'app: il titolare non dispone automaticamente di una copia remota del tuo archivio.</p>
+  <p>Hai anche il diritto di proporre reclamo al <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Garante per la protezione dei dati personali</a> o all'autorità di controllo competente.</p>
+
+  <h2>10. Modifiche all'informativa</h2>
+  <p>Questa informativa può essere aggiornata se cambiano le funzionalità di PROOF, i servizi utilizzati o le modalità di trattamento. Le modifiche saranno rese disponibili a questa stessa pagina, indicando la data dell'ultimo aggiornamento.</p>
+
+  <footer>PROOF — Ogni progresso ha una prova. · Contatto: <a href="mailto:giuseppemarturano8@gmail.com">giuseppemarturano8@gmail.com</a></footer>
+</main>
+</body>
+</html>
